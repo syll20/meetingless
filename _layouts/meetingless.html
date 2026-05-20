@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<style>
+.meetingless-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+@media (max-width: 800px) {
+  .meetingless-container { flex-direction: column; }
+  .meetingless-sidebar { order: -1; }
+}
+.meetingless-sidebar {
+  flex: 0 0 280px;
+  max-width: 320px;
+  padding: 1rem;
+  background: var(--sidebar-background, #f8f9fa);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+.meetingless-main { flex: 1; min-width: 0; }
+.meetingless-sidebar h2 { margin-top: 0; }
+</style>
+
+<div class="meetingless-container">
+  <aside class="meetingless-sidebar">
+    {% include meetingless_sidebar.html %}
+  </aside>
+  <main class="meetingless-main">
+    {{ content }}
+  </main>
+</div>

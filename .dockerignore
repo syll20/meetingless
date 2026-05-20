@@ -1,0 +1,7 @@
+.bundle
+vendor/bundle
+node_modules
+tmp
+log
+.git
+.DS_Store
