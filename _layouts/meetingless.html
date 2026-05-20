@@ -22,10 +22,23 @@ layout: default
 }
 .meetingless-main { flex: 1; min-width: 0; }
 .meetingless-sidebar h2 { margin-top: 0; }
+.lang-switcher { margin-bottom: 0.5rem; }
 </style>
+
+{% I18n_Headers %}
 
 <div class="meetingless-container">
   <aside class="meetingless-sidebar">
+    <div class="lang-switcher">
+      {% for lang in site.languages %}
+        {% if lang == site.default_lang %}
+          <a href="{{ site.baseurl }}/">{{ lang | upcase }}</a>
+        {% else %}
+          <a href="{{ site.baseurl }}/{{ lang }}/">{{ lang | upcase }}</a>
+        {% endif %}
+        {% if forloop.last == false %} · {% endif %}
+      {% endfor %}
+    </div>
     {% include meetingless_sidebar.html %}
   </aside>
   <main class="meetingless-main">

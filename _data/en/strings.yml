@@ -1,0 +1,8 @@
+strings:
+  sidebar:
+    title: "The Meetingless Principles"
+    items:
+      - "Default to asynchronous communication"
+      - "Meetings require clear purpose"
+      - "Attendance must be intentional"
+      - "Every meeting must produce outcomes"
