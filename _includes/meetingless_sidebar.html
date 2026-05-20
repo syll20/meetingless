@@ -1,7 +1,9 @@
-<h2>The Meetingless Principles</h2>
-<ul>
-  <li>Default to asynchronous communication</li>
-  <li>Meetings require clear purpose</li>
-  <li>Attendance must be intentional</li>
-  <li>Every meeting must produce outcomes</li>
-</ul>
+{% assign L = site.data[site.active_lang] | default: site.data[site.default_lang] %}
+<div class="meetingless-sidebar-inner">
+  <h2>{{ L.strings.sidebar.title }}</h2>
+  <ul>
+    {% for item in L.strings.sidebar.items %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
