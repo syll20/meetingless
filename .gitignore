@@ -1,0 +1,41 @@
+# Jekyll / build outputs
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler / Ruby
+.bundle
+vendor/bundle/
+pkg/
+
+# Node
+node_modules/
+
+# Logs, temp and coverage
+log/
+tmp/
+coverage/
+.byebug_history
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# Docker
+docker-compose.override.yml
+
+# Misc
+public/
+*.backup
