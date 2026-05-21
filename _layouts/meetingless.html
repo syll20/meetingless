@@ -1,26 +1,31 @@
 ---
 layout: default
 ---
-
 <style>
 .meetingless-container {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
+  max-width: 1600px; /* increase page width */
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .meetingless-container { max-width: 100%; padding: 0 1rem; }
 }
 @media (max-width: 800px) {
   .meetingless-container { flex-direction: column; }
-  .meetingless-sidebar { order: -1; }
+  .meetingless-sidebar { order: -1; width: 100%; max-width: none; }
 }
+
 .meetingless-sidebar {
-  flex: 0 0 280px;
+  flex: 0 0 320px; /* keep sidebar width */
   max-width: 320px;
   padding: 1rem;
   background: var(--sidebar-background, #f8f9fa);
   border-radius: 6px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
-.meetingless-main { flex: 1; min-width: 0; }
+.meetingless-main { flex: 1 1 0%; min-width: 0; }
 .meetingless-sidebar h2 { margin-top: 0; }
 </style>
 
@@ -32,3 +37,29 @@ layout: default
     {{ content }}
   </main>
 </div>
+<style>
+/* Override remote theme container rules so our meetingless layout can be wider. */
+#main_content_wrap, #main_content, .outer, .inner, .outer .inner {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+</style>
+<style>
+#header_wrap, #footer_wrap { max-width: 100% !important; }
+</style>
+<style>
+/* Align theme header with the meetingless container */
+#header_wrap .inner {
+  max-width: 1600px !important;
+  margin: 0 auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  box-sizing: border-box;
+}
+#project_title, #project_tagline {
+  margin-left: 0 !important;
+  text-align: left !important;
+}
+</style>
