@@ -1,6 +1,10 @@
----
-layout: meetingless
-title: meetingless
+# The Meetingless Principles
+
+	- Default to asynchronous communication
+	- Meetings require clear purpose
+	- Attendance must be intentional
+	- Every meeting must produce outcomes
+
 ---
 
 ## 1. Before Sending an Invitation
