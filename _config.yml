@@ -1,8 +1,10 @@
 title: meetingless
 description: a framework for productivity
 show_downloads: false
+show_footer_maintainer: false
 google_analytics:
-github.is_project_page: false
+github:
+  is_project_page: false
 remote_theme: pages-themes/slate@v0.2.0
 plugins:
   - jekyll-remote-theme
