@@ -2,8 +2,6 @@
 layout: meetingless
 title: meetingless
 permalink: /
-lang: en
-page_id: home
 ---
 
 ## 1. Before Sending an Invitation
