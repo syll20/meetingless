@@ -4,6 +4,8 @@ title: Press Review
 permalink: /press_review.html
 ---
 
+[← Back to home]({{ '/' | relative_url }})
+
 # Press Review
 
 Latest approved articles from the meetingless bot (API, Local AI, orchestrated with Python scripts).
