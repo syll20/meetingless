@@ -8,7 +8,7 @@ permalink: /press_review.html
 
 # Press Review
 
-Latest approved articles from the meetingless bot (API, Local AI, orchestrated with Python scripts).
+Latest approved articles from the meetingless bot (API and Local LLM with Ollama, orchestrated with Python scripts).
 
 <article>
   <h2><a href="https://indianexpress.com/shorts/lifestyle/workplace/meeting-fatigue-too-many-workplace-meetings-employee-productivity-10778715/">‘Meeting fatigue’: Why many employees are feeling burnt out</a></h2>
