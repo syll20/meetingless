@@ -11,5 +11,6 @@ plugins:
   - jekyll-seo-tag
   # (plugins: jekyll-remote-theme and jekyll-seo-tag)
 
-# NOTE: set `url` to your production site URL if you want absolute links.
-# url: "https://syll20.github.io/meetingless"
+# GitHub Pages project-site base path
+baseurl: "/meetingless"
+url: "https://syll20.github.io"
